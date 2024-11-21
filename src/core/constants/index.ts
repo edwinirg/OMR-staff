@@ -1,0 +1,4 @@
+export const SEQUELIZE = 'SEQUELIZE';
+export const STAFF_REPOSITORY = 'STAFF_REPOSITORY';
+
+
