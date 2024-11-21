@@ -3,6 +3,7 @@ import { validationSchema } from './core/config/schemas/config.schema';
 import { ConfigModule } from '@nestjs/config';
 import { config } from './core/config';
 import { EmpleadosModule } from './modules/empleados/empleados.module';
+import { DatabaseModule } from './core/database/database.module';
 
 
 @Module({
@@ -14,6 +15,7 @@ import { EmpleadosModule } from './modules/empleados/empleados.module';
       load: [config],
     }),
     /**Only Staff */
+    DatabaseModule,
     EmpleadosModule
   ],
   
